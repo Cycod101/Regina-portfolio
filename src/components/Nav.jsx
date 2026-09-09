@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react';
-import { Menu, X, Moon, Sun } from 'lucide-react';
+import { Menu, X, Moon, Sun, Mail } from 'lucide-react';
 
 const LINKS = [
   { href: '#apropos', label: 'À propos' },
   { href: '#experience', label: 'Expérience' },
   { href: '#competences', label: 'Compétences' },
   { href: '#certifications', label: 'Certifications' },
-  { href: '#contact', label: 'Contact' },
 ];
 
 export default function Nav({ theme, onToggleTheme }) {
@@ -29,26 +28,24 @@ export default function Nav({ theme, onToggleTheme }) {
         <nav aria-label="Navigation principale">
           <ul className={`nav-links ${open ? 'open' : ''}`}>
             {LINKS.map((l) => (
-              <li key={l.href} className={l.href === '#contact' ? 'nav-cta-item' : ''}>
-                {l.href === '#contact' ? (
-                  <a
-                    href={l.href}
-                    className="btn btn-primary nav-cta"
-                    onClick={() => setOpen(false)}
-                  >
-                    Me contacter
-                  </a>
-                ) : (
-                  <a href={l.href} onClick={() => setOpen(false)}>
-                    {l.label}
-                  </a>
-                )}
+              <li key={l.href}>
+                <a href={l.href} onClick={() => setOpen(false)}>
+                  {l.label}
+                </a>
               </li>
             ))}
           </ul>
         </nav>
 
         <div className="nav-actions">
+          <a
+            href="#contact"
+            className="btn btn-primary nav-cta"
+            onClick={() => setOpen(false)}
+          >
+            <Mail size={16} strokeWidth={1.75} />
+            Me contacter
+          </a>
           <button
             type="button"
             className="icon-btn"

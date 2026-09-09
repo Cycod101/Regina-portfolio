@@ -292,17 +292,6 @@ section + section {
 .nav-cta {
   font-size: 0.72rem;
   padding: 0.5rem 0.95rem;
-  background: #0a0b0d;
-  color: #ffffff;
-  border-color: var(--line);
-  box-shadow: none;
-}
-
-.nav-cta:hover {
-  filter: none;
-  background: #16181c;
-  color: #ffffff;
-  box-shadow: none;
 }
 
 .nav-actions {
@@ -384,11 +373,6 @@ section + section {
 
   .nav-links li:last-child a {
     border-bottom: none;
-  }
-
-  /* Le CTA "Me contacter" reste visible dans la barre */
-  .nav-links .nav-cta-item {
-    display: none;
   }
 
   .nav-burger {

@@ -32,7 +32,13 @@ export default function About() {
                 <span className="k">
                   <Mail size={14} /> E-mail
                 </span>
-                <a className="v mono" href={`mailto:${profile.email}`} style={{ fontSize: '0.78rem' }}>
+                <a
+                  className="v mono"
+                  href={`mailto:${profile.email}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ fontSize: '0.78rem' }}
+                >
                   {profile.email}
                 </a>
               </div>

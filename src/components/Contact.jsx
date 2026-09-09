@@ -30,12 +30,17 @@ export default function Contact() {
           <h2 className="section-title">Travaillons ensemble</h2>
           <p>
             Un projet d'infrastructure, un poste en administration systèmes et réseaux, ou une
-            question ? Ma boîte mail est toujours ouverte.
+            question ? contactez moi.
           </p>
           <div className="contact-actions">
-            <a href={`mailto:${profile.email}`} className="btn btn-primary">
+            <a
+              href={`mailto:${profile.email}`}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-primary"
+            >
               <Mail size={16} strokeWidth={1.75} />
-              Me contacter
+              Email
             </a>
             <a href={`tel:${profile.phoneHref}`} className="btn btn-ghost">
               <Phone size={16} strokeWidth={1.75} />
