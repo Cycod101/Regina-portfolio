@@ -380,6 +380,23 @@ section + section {
   }
 }
 
+@media (max-width: 640px) {
+  .nav-inner {
+    padding-inline: 16px;
+    gap: 0.5rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 11vw, 2.8rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-cta-label {
+    display: none;
+  }
+}
+
 /* ——— Hero ——— */
 .hero {
   position: relative;
@@ -636,6 +653,7 @@ section + section {
   padding-block: 0.45rem;
   font-size: 0.9rem;
   border-bottom: 1px dashed var(--line-soft);
+  flex-wrap: wrap;
 }
 
 .info-row:last-child {
@@ -651,6 +669,8 @@ section + section {
 
 .info-row .v {
   text-align: right;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .info-row a.v {

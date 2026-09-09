@@ -44,7 +44,7 @@ export default function Nav({ theme, onToggleTheme }) {
             onClick={() => setOpen(false)}
           >
             <Mail size={16} strokeWidth={1.75} />
-            Me contacter
+            <span className="nav-cta-label">Me contacter</span>
           </a>
           <button
             type="button"
