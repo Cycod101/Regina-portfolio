@@ -1,4 +1,4 @@
-import { Mail, Phone, MessageCircle } from 'lucide-react';
+import { Mail, Phone, MessageCircle, FileText } from 'lucide-react';
 import FadeInWhenVisible from './FadeInWhenVisible';
 import { profile } from '../data';
 
@@ -63,6 +63,10 @@ export default function Contact() {
             >
               <LinkedinIcon size={16} strokeWidth={1.75} />
               LinkedIn
+            </a>
+            <a href={profile.cv} download className="btn btn-ghost">
+              <FileText size={16} strokeWidth={1.75} />
+              CV
             </a>
           </div>
         </FadeInWhenVisible>

@@ -8,12 +8,13 @@ export const profile = {
   phoneHref: '+22896194610',
   whatsapp: 'https://wa.me/22896194610',
   linkedin: 'https://www.linkedin.com/in/r%C3%A9gine-occansey-2237a4257/',
+  cv: '/CV.pdf',
   availability: 'Disponible pour de nouvelles opportunités',
   bio: [
     "Diplômée en informatique de l'IAI-TOGO (2023), je conçois, administre et sécurise des infrastructures systèmes et réseaux : gestion de parc, serveurs Windows et Linux, virtualisation VMware, sauvegarde et réseaux d'accès.",
     "Aujourd'hui technicienne système d'information à l'ANID, je mets mes compétences au service de projets technologiques exigeants, avec un goût marqué pour l'automatisation et la fiabilité des systèmes.",
   ],
-  aptitudes: ['Travail en équipe', 'Autonomie', "Capacité d'adaptation"],
+  aptitudes: ['Travail en équipe', 'Autonome', "Capacité d'adaptation"],
   languages: [
     { name: 'Français', level: 'Courant' },
     { name: 'Anglais', level: 'Intermédiaire' },
@@ -28,14 +29,14 @@ export const marqueeItems = [
   'vCenter Server',
   'Veeam Backup',
   'MikroTik',
-  'Nagios',
   'OPNsense',
   'Nginx',
+  'Let’s Encrypt',
   'HPE Storage',
   'PowerShell',
   'Bash',
   'DNS / DHCP / GPO',
-  'FortiGate',
+  'Wireshark',
 ];
 
 export const experience = [
@@ -52,7 +53,7 @@ export const experience = [
   },
   {
     role: 'Assistante IT — Stage pratique',
-    org: 'Nano-Techno',
+    org: 'Netis-Togo',
     period: 'Nov 2023 → Mars 2024',
     current: false,
     bullets: [
@@ -63,7 +64,7 @@ export const experience = [
   },
   {
     role: 'Technicienne Réseau & Système — Stage pratique',
-    org: 'BETEIE',
+    org: 'BETEIR',
     period: 'Juil 2023 → Oct 2023',
     current: false,
     bullets: [
@@ -73,7 +74,7 @@ export const experience = [
   },
   {
     role: 'Administratrice Système & Réseau — Stage pratique',
-    org: 'OAPI',
+    org: 'AOBT',
     period: 'Avr 2023 → Août 2023',
     current: false,
     bullets: [
@@ -82,7 +83,7 @@ export const experience = [
   },
   {
     role: 'Technicienne Réseau — Stage pratique',
-    org: 'T&M · Technologie Réseau Télécom',
+    org: 'TRT (Technologie Réseau Télécom)',
     period: 'Juin 2022 → Août 2022',
     current: false,
     bullets: [
@@ -102,8 +103,8 @@ export const skillGroups = [
       'Baies de stockage HPE',
       'Veeam Backup & Replication',
       'Nginx · Let’s Encrypt · OPNsense',
-      'Serveurs LAMP · Imprimantes réseau',
-      'Supervision avec Nagios · MRemoteNG',
+      'MRemoteNG · Imprimantes réseau',
+      'Analyse réseau : Wireshark · Tcpdump',
       'OS : Linux & Windows',
     ],
   },
@@ -130,7 +131,7 @@ export const skillGroups = [
   {
     icon: 'TerminalSquare',
     title: 'Scripting & automatisation',
-    items: ['PowerShell', 'Bash', 'Automatisation de tâches d’administration'],
+    items: ['PowerShell', 'Bash', 'Python · SQL', 'Automatisation de tâches d’administration'],
   },
 ];
 
@@ -160,16 +161,19 @@ export const certifications = [
     ],
   },
   {
-    issuer: 'Fortinet',
-    title: 'FCF — Getting Started in Cybersecurity 2.0',
-    tag: 'Self-paced',
-    courses: [],
-  },
-  {
-    issuer: 'Fortinet',
-    title: 'FCA — FortiGate 7.4 Operator',
-    tag: 'Self-paced',
-    courses: [],
+    issuer: 'Google · Coursera',
+    title: 'Google Foundations of Cybersecurity',
+    tag: 'Certificat professionnel',
+    courses: [
+      'Play It Safe: Manage Security Risks',
+      'Connect and Protect: Networks and Network Security',
+      'Tools of the Trade: Linux and SQL',
+      'Assets, Threats, and Vulnerabilities',
+      'Sound the Alarm: Detection and Response',
+      'Automate Cybersecurity Tasks with Python',
+      'Put It to Work: Prepare for Cybersecurity Jobs',
+      'Accelerate Your Job Search with AI',
+    ],
   },
   {
     issuer: 'Formation',
